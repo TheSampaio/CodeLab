@@ -12,11 +12,11 @@ This repository contains my personal projects, organized to showcase my skills i
 
 ## Example Projects
 
-- **React Login Site (`react-login-site`)**  
+- **React Login Webite (`react-login-website`)**  
   A React SPA login project focused on the user interface and authentication flow.  
-  _(Frontend only – no backend connection)_
+  _(Frontend only – No backend connection)_
 
-  ![Login Page Screenshot](projects/frontend/react-login-site/demos/showcase-01.jpg)
+  ![Login Page Screenshot](projects/frontend/react-login-website/demos/showcase-01.jpg)
 
 ## How to Use
 

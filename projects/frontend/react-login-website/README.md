@@ -1,4 +1,4 @@
-# React Login Site
+# React Login Website
 
 A simple login page built with **React + Vite**, designed as a frontend-only SPA (Single Page Application).  
 This project is part of my personal portfolio and was created for learning and experimentation purposes.
@@ -20,7 +20,7 @@ To run this project locally:
 ```bash
 # Clone the repository
 git clone https://github.com/TheSampaio/CodeLab.git
-cd CodeLab/projects/frontend/react-login-site
+cd CodeLab/projects/frontend/react-login-website
 
 # Install dependencies
 npm install
