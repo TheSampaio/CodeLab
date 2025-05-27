@@ -1,0 +1,19 @@
+.top-search-bar-container {
+  width: 100%;
+  background-color: #200b64;
+  color: white;
+  padding: 16px 0;
+
+  display: flex;
+  justify-content: center;
+  left: 0;
+}
+
+.top-search-bar-entry {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 8px;
+  width: 324px;
+}

@@ -1,0 +1,46 @@
+.weather-card-container {
+  width: 100%;
+  height: 80vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-card-content {
+  background-color: #200b64;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  padding: 36px;
+  width: 250px;
+  height: 350px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("../assets/images/clouds.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weather-card-image {
+  border-radius: 8px;
+  padding: 8px;
+  width: 128px;
+}
+
+.weather-card-degrees {
+  margin: 16px 0 12px 0;
+}
+
+.weather-card-city {
+  margin: 0;
+}
+
+.weather-card-degrees,
+.weather-card-city {
+  color: white;
+}
