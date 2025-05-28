@@ -1,7 +1,7 @@
 import "./App.css";
 
 import { SearchPage } from "./pages/SearchPage";
-// import { DevConsole } from "./debug/DevConsole";
+// import { DebugConsole } from "./debug/DebugConsole";
 
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -37,7 +37,12 @@ function App() {
       />
 
       {/* DEV CONSOLE BELLOW - SHOULD BE REMOVED IN THE CLIENT VERSION! */}
-      {/* <DevConsole locationData={locationData} weatherData={weatherData} /> */}
+      {/* <DebugConsole title={"Location API"}>
+        {JSON.stringify(locationData, null, 2)}
+      </DebugConsole>
+      <DebugConsole title={"Weather API"}>
+        {JSON.stringify(weatherData, null, 2)}
+      </DebugConsole> */}
     </>
   );
 }
