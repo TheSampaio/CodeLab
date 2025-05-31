@@ -10,7 +10,7 @@ import snowIcon from "../assets/icons/snow.svg";
 import thunderRainIcon from "../assets/icons/thunder_rain.svg";
 import thunderIcon from "../assets/icons/thunder.svg";
 
-export function WeatherCard(props) {
+export function WeatherCard({ country, city, temperature, weatherCode }) {
   const weatherCodeIcons = {
     0: clearIcon,
     1: clearIcon,
@@ -73,16 +73,31 @@ export function WeatherCard(props) {
     99: "Thunderstorm with heavy hail",
   };
 
-  const iconSrc = weatherCodeIcons[props.weatherCode] || noResultIcon;
-  const description = weatherCodeDescriptions[props.weatherCode] || "Unknown";
+  const iconSrc = weatherCodeIcons[weatherCode] || noResultIcon;
+  const description = weatherCodeDescriptions[weatherCode] || "Unknown";
 
   return (
     <div className="weather-card-container">
-      <div className="weather-card-content">
-        <img className="weather-card-image" src={iconSrc} alt={description} />
-        <h1 className="weather-card-degrees">{props.temperature} °C</h1>
-        <h2 className="weather-card-city">{props.city}</h2>
-      </div>
+      <section
+        className="weather-card-content"
+        aria-label="Weather Information"
+      >
+        <header>
+          <h2 className="weather-card-city">{city}</h2>
+          {country && <p className="weather-card-country">{country}</p>}
+        </header>
+
+        <figure className="weather-card-figure">
+          <img className="weather-card-image" src={iconSrc} alt={description} />
+          <figcaption className="weather-card-description">
+            {description}
+          </figcaption>
+        </figure>
+
+        <div className="weather-card-temp">
+          <h1 className="weather-card-degrees">{temperature} °C</h1>
+        </div>
+      </section>
     </div>
   );
 }
