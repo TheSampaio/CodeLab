@@ -9,14 +9,28 @@ export function SearchPage({
   weatherCode = -1,
   onSearch,
 }) {
+  const lang = (navigator.language || "en").split("-")[0];
+
+  const unknownCityTranslations = {
+    en: "Unknown City",
+    es: "Ciudad Desconocida",
+    pt: "Cidade Desconhecida",
+  };
+
+  const translatedCity =
+    city === "Unknown City"
+      ? unknownCityTranslations[lang] || unknownCityTranslations["en"]
+      : city;
+
   return (
     <>
       <TopSearchBar onSearch={onSearch} />
       <WeatherCard
         country={country}
-        city={city}
+        city={translatedCity}
         temperature={temperature}
         weatherCode={weatherCode}
+        language={lang}
       />
       <Footer />
     </>

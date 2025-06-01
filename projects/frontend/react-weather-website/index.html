@@ -11,6 +11,19 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cairox | Weather Forecast</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const lang = (navigator.language || "es").split("-")[0];
+
+        const footers = {
+          en: "Weather Forecast",
+          es: "Pronóstico del tiempo",
+          pt: "Previsão do Tempo",
+        };
+
+        document.title = `Cairox | ${footers[lang] || footers["es"]}`;
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
