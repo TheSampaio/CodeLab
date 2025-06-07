@@ -29,7 +29,7 @@ A single-page application (SPA) built with **React** and **Vite** that delivers 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/TheSampaio/weather-forecast-spa.git
+   git clone https://github.com/TheSampaio/weather-forecast-spa
    cd weather-forecast-spa
    ```
 
