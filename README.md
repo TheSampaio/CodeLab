@@ -4,6 +4,8 @@ A single-page application (SPA) built with **React** and **Vite** that delivers 
 
 🌐 **Official Website**: [https://clima.cairox.com.br](https://clima.cairox.com.br)
 
+![Website screenshot](./.github/showcase-weather-forecast-spa.jpg)
+
 ## Features
 
 - 🌍 Search weather by city.
@@ -21,8 +23,12 @@ A single-page application (SPA) built with **React** and **Vite** that delivers 
 
 ## Used APIs
 
-- **Nominatim** - Geocoding service for location search by name or address.
-- **Open-Meteo** - Provides weather forecast data for non-commercial use.
+- **Nominatim** - For converting city names into coordinates.
+- **Open-Meteo** - For retrieving weather data based on coordinates.
+
+## Credits
+
+- The search icon was made by [Hero Icons](https://heroicons.com/).
 
 ## Getting Started
 

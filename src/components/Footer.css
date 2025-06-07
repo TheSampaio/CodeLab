@@ -2,7 +2,7 @@
   width: 100%;
   background-color: #200b64;
   color: white;
-  padding: 0 16px;
+  padding: 16px;
 
   display: flex;
   position: fixed;
@@ -12,6 +12,8 @@
   left: 0;
 }
 
-p {
+a {
+  color: white;
   font-size: 14px;
+  text-decoration: none;
 }

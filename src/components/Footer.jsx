@@ -11,7 +11,9 @@ export function Footer() {
 
   return (
     <div className="footer-container">
-      <p>{footers[lang] || footers["es"]} © 2025 Cairox</p>
+      <a href="https://github.com/TheSampaio/weather-forecast-spa">
+        {footers[lang] || footers["es"]} © 2025 Cairox
+      </a>
     </div>
   );
 }
