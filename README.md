@@ -1,28 +1,50 @@
-# Code Lab
+# Weather Forecast SPA
 
-This repository contains my personal projects, organized to showcase my skills in frontend and backend development.
+A single-page application (SPA) built with **React** and **Vite** that delivers real-time weather forecasts with a clean and responsive user interface.
 
-## Repository Structure
+🌐 **Official Website**: [https://clima.cairox.com.br](https://clima.cairox.com.br)
 
-- `frontend/`  
-  Contains applications and user interfaces primarily built with React and other frontend technologies.
+## Features
 
-- `backend/`  
-  Contains APIs and services developed using Node.js, ASP.NET, and other backend technologies.
+- 🌍 Search weather by city.
+- 📍 Get local forecast using geolocation.
+- 📱 Fully responsive design.
+- ⚡ Fast development with Vite and HMR.
+- 🧼 Linting with ESLint for consistent code quality.
 
-## Example Projects
+## Tech Stack
 
-- **React Login Webite (`react-login-website`)**  
-  A React SPA login project focused on the user interface and authentication flow.  
-  _(Frontend only – No backend connection)_
+- **React**
+- **Vite**
+- **Axios**
+- **ESLint**
 
-  ![Login Page Screenshot](projects/frontend/react-login-website/demos/showcase-01.jpg)
+## Used APIs
 
-## How to Use
+- **Nominatim** - Geocoding service for location search by name or address.
+- **Open-Meteo** - Provides weather forecast data for non-commercial use.
 
-Each project has its own README with specific instructions.  
-To run a project, navigate to its folder and follow the instructions in its README.
+## Getting Started
 
----
+1. Clone the repository:
 
-Feel free to explore the folders and check out my work!
+   ```bash
+   git clone https://github.com/your-username/weather-forecast-spa.git
+   cd weather-forecast-spa
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.

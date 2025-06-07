@@ -11,7 +11,7 @@ export function Footer() {
 
   return (
     <div className="footer-container">
-      <p>{footers[lang || footers["es"]]} © 2025 Cairox</p>
+      <p>{footers[lang] || footers["es"]} © 2025 Cairox</p>
     </div>
   );
 }
