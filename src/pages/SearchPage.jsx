@@ -6,6 +6,8 @@ export function SearchPage({
   country = "",
   city = "Unknown City",
   temperature = 0,
+  minTemperature = 0,
+  maxTemperature = 0,
   weatherCode = -1,
   onSearch,
 }) {
@@ -29,6 +31,8 @@ export function SearchPage({
         country={country}
         city={translatedCity}
         temperature={temperature}
+        minTemperature={minTemperature}
+        maxTemperature={maxTemperature}
         weatherCode={weatherCode}
         language={lang}
       />

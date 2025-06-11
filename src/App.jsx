@@ -27,7 +27,7 @@ function App() {
       const longitude = result.lon;
 
       const locationURL = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
-      const weatherURL = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,weather_code`;
+      const weatherURL = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,weather_code&daily=temperature_2m_min,temperature_2m_max`;
 
       const [locationRes, weatherRes] = await Promise.all([
         axios.get(locationURL),
@@ -72,6 +72,12 @@ function App() {
         country={country}
         city={city}
         temperature={Math.floor(weatherData?.current?.temperature_2m ?? 0)}
+        minTemperature={Math.floor(
+          weatherData?.daily?.temperature_2m_min[0] ?? 0
+        )}
+        maxTemperature={Math.floor(
+          weatherData?.daily?.temperature_2m_max[0] ?? 0
+        )}
         weatherCode={weatherData?.current?.weather_code}
         onSearch={fetchWeatherForCity}
       />
@@ -79,8 +85,8 @@ function App() {
       {/* DEV CONSOLE BELLOW - SHOULD BE REMOVED IN THE CLIENT VERSION! */}
       {/* <DebugConsole title={"Location API"}>
         {JSON.stringify(locationData, null, 2)}
-      </DebugConsole>
-      <DebugConsole title={"Weather API"}>
+      </DebugConsole> */}
+      {/* <DebugConsole title={"Weather API"}>
         {JSON.stringify(weatherData, null, 2)}
       </DebugConsole> */}
     </>

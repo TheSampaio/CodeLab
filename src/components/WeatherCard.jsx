@@ -14,6 +14,8 @@ export function WeatherCard({
   country,
   city,
   temperature,
+  minTemperature,
+  maxTemperature,
   weatherCode,
   language,
 }) {
@@ -174,6 +176,17 @@ export function WeatherCard({
 
         <div className="weather-card-temp">
           <h1 className="weather-card-degrees">{temperature} °C</h1>
+        </div>
+        <div className="weather-card-minmax">
+          <div className="minmax-box">
+            <h3 className="minmax-title">Min</h3>
+            <h4 className="minmax-value">{minTemperature} °C</h4>
+          </div>
+          <div className="minmax-separator">|</div>
+          <div className="minmax-box">
+            <h3 className="minmax-title">Max</h3>
+            <h4 className="minmax-value">{maxTemperature} °C</h4>
+          </div>
         </div>
       </section>
     </div>
